@@ -1,0 +1,19 @@
+From: Antonio Terceiro <terceiro@debian.org>
+Date: Thu, 3 Mar 2016 16:30:17 -0300
+Subject: Be careful with that bundler
+
+---
+ railties/lib/rails/generators/app_base.rb | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+
+--- a/railties/lib/rails/generators/app_base.rb
++++ b/railties/lib/rails/generators/app_base.rb
+@@ -425,7 +425,7 @@
+       end
+ 
+       def run_bundle
+-        bundle_command("install", "BUNDLE_IGNORE_MESSAGES" => "1") if bundle_install?
++        bundle_command("install --local", "BUNDLE_IGNORE_MESSAGES" => "1") if bundle_install?
+       end
+ 
+       def run_webpack

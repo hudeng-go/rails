@@ -1,0 +1,3 @@
+actioncable/package.json usr/share/nodejs/@rails/actioncable
+actioncable/app/assets usr/share/nodejs/@rails/actioncable/app
+actioncable/app/javascript/action_cable/* usr/share/nodejs/@rails/actioncable/src
